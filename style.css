@@ -7,7 +7,7 @@ html {
 body {
   min-height: 100%;
   min-width: 100%;
-  background: linear-gradient(pink, violet);
+  background: linear-gradient(peachpuff, aqua);
 }
 
 button {
@@ -24,14 +24,40 @@ button {
   background: rgba(255, 255, 255, 0.3);
   padding: 15px 20px 18px 18px;
   border-radius: 5px;
-  box-shadow: 2px 5px 5px #333;
+  box-shadow: 2px 5px 10px #333;
+  
 }
 
 #list {
   margin: 10px;
   border: 1px solid #333;
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, .75);
   padding: 15px 20px 18px 18px;
   border-radius: 5px;
-  box-shadow: 2px 5px 5px #333;
+  box-shadow: 2px 5px 10px #333;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 0px 5px;
+  border-radius: 5px;
+  line-height: 1.5em;
+  transition: background-color 200ms;
+}
+
+li:hover {
+  background-color: rgb(252, 229, 209);
+}
+
+span.delete {
+  font-weight: 900;
+  color: #bbb;
+  cursor: default;
+  transition: color 150ms;
+}
+
+span.delete:hover {
+  color: #333;
 }
